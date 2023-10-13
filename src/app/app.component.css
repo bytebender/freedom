@@ -1,0 +1,6 @@
+.greyed {
+    width: auto;
+    text-align: center;
+    opacity: 0.4;
+    filter: grayscale(100%)
+}
