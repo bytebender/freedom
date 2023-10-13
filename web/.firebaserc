@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "freedom-f7a50"
+  },
+  "targets": {},
+  "etags": {
+    "freedom-f7a50": {
+      "extensionInstances": {}
+    }
+  }
+}
