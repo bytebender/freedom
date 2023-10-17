@@ -17,11 +17,6 @@
           "destination": "/index.html"
         }
       ]
-    },
-    {
-      "target": "freedom",
-      "source": ".",
-      "frameworksBackend": {}
     }
   ],
   "remoteconfig": {
