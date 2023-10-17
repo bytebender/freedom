@@ -2,7 +2,15 @@
   "projects": {
     "default": "freedom-f7a50"
   },
-  "targets": {},
+  "targets": {
+    "freedom-f7a50": {
+      "hosting": {
+        "freedom": [
+          "freedom-f7a50"
+        ]
+      }
+    }
+  },
   "etags": {
     "freedom-f7a50": {
       "extensionInstances": {}
