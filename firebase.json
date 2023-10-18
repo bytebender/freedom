@@ -5,6 +5,7 @@
   },
   "hosting": [
     {
+      "target": "freedom",
       "public": "dist/freedom",
       "ignore": [
         "firebase.json",
@@ -17,11 +18,6 @@
           "destination": "/index.html"
         }
       ]
-    },
-    {
-      "target": "freedom",
-      "source": ".",
-      "frameworksBackend": {}
     }
   ],
   "remoteconfig": {
