@@ -5,6 +5,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
 import { CustomerService } from 'src/app/services/customer.service';
 import { Mock } from 'moq.ts';
 import { of } from 'rxjs';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('CustomersPageComponent', () => {
   let component: CustomersPageComponent;
@@ -22,6 +26,12 @@ describe('CustomersPageComponent', () => {
       providers: [
         { provide: CustomerService, useValue: mockCustomerService.object() },
       ],
+      imports: [
+        NoopAnimationsModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatFormFieldModule,
+      ]
     });
     fixture = TestBed.createComponent(CustomersPageComponent);
     component = fixture.componentInstance;
