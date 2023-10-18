@@ -1,1 +1,14 @@
-<p>customers-page works!</p>
+<button mat-raised-button (click)="addCustomer()">Add Customer</button>
+<div>
+    <pre>
+        {{ customerList$ | async | json}}
+    </pre>
+</div>
+<form>
+    <mat-form-field>
+        <mat-label>ID</mat-label>
+        <input matInput placeholder="Ex. YjhurJwV8TWL5UJsFx3E" [formControl]="id">
+      </mat-form-field>
+</form>
+
+<button mat-raised-button (click)="removeCustomer()">Remove Customer</button>
