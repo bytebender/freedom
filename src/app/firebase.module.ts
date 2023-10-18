@@ -1,15 +1,45 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FirebaseAppModule, initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import {
+  FirebaseAppModule,
+  initializeApp,
+  provideFirebaseApp,
+} from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService, AnalyticsModule } from '@angular/fire/analytics';
-import { provideAuth,getAuth, AuthModule } from '@angular/fire/auth';
-import { provideFirestore,getFirestore, FirestoreModule } from '@angular/fire/firestore';
-import { provideFunctions,getFunctions, FunctionsModule } from '@angular/fire/functions';
-import { provideMessaging,getMessaging, MessagingModule } from '@angular/fire/messaging';
-import { provideRemoteConfig,getRemoteConfig, RemoteConfigModule } from '@angular/fire/remote-config';
-import { provideStorage,getStorage, StorageModule } from '@angular/fire/storage';
+import {
+  provideAnalytics,
+  getAnalytics,
+  ScreenTrackingService,
+  UserTrackingService,
+  AnalyticsModule,
+} from '@angular/fire/analytics';
+import { provideAuth, getAuth, AuthModule } from '@angular/fire/auth';
+import {
+  provideFirestore,
+  getFirestore,
+  FirestoreModule,
+} from '@angular/fire/firestore';
+import {
+  provideFunctions,
+  getFunctions,
+  FunctionsModule,
+} from '@angular/fire/functions';
+import {
+  provideMessaging,
+  getMessaging,
+  MessagingModule,
+} from '@angular/fire/messaging';
+import {
+  provideRemoteConfig,
+  getRemoteConfig,
+  RemoteConfigModule,
+} from '@angular/fire/remote-config';
+import {
+  provideStorage,
+  getStorage,
+  StorageModule,
+} from '@angular/fire/storage';
 
 @NgModule({
   declarations: [],
@@ -34,9 +64,6 @@ import { provideStorage,getStorage, StorageModule } from '@angular/fire/storage'
     RemoteConfigModule,
     StorageModule,
   ],
-  providers: [
-    ScreenTrackingService,
-    UserTrackingService,
-  ],
+  providers: [ScreenTrackingService, UserTrackingService],
 })
-export class FirebaseModule { }
+export class FirebaseModule {}

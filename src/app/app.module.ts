@@ -9,6 +9,7 @@ import { FirebaseModule } from './firebase.module';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CustomersPageComponent } from './pages/customers-page/customers-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MaterialModule,
     FirebaseModule,
   ],
