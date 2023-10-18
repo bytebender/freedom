@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Route, RouterModule, Routes } from '@angular/router';
 import { AuthGuard, redirectLoggedInTo, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
@@ -7,6 +7,8 @@ import { CustomersPageComponent } from './pages/customers-page/customers-page.co
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['/login']);
 // const redirectLoggedInToHome = () => redirectLoggedInTo(['home']);
+
+const defaultRoute = {} as Route;
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
